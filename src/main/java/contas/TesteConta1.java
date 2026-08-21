@@ -18,6 +18,12 @@ public class TesteConta1 {
         Conta1 minhaConta = new Conta1();
         
         System.out.printf("O nome inicial é: %s%n%n", minhaConta.getName());
+        
+        System.out.println("Por favor, entre com o nome: ");
+        String nome = input.nextLine();
+        
+        minhaConta.setName(nome);
 
+        System.out.printf("O nome do obejto em minhaConta é %s.", minhaConta.getName());
     }
 }
