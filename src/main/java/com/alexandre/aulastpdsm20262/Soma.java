@@ -30,5 +30,7 @@ public class Soma {
         sum = number1 + number2;
         
         System.out.println("A soma e: "+ sum);
+        
+
     }
 }
