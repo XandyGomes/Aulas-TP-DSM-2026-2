@@ -28,8 +28,7 @@ public class TesteConta {
         
         System.out.println("Tentando sacar R$ 1.000,00");
         conta1.sacar(1000.0);
-        
-        
+                
         System.out.println("Tentando sacar R$ 20,00");
         conta1.sacar(20.0);
         
@@ -37,7 +36,5 @@ public class TesteConta {
                 + conta1.getNumero()
                 + " = " 
                 + conta1.getSaldo());
-    
-    
     }
 }
