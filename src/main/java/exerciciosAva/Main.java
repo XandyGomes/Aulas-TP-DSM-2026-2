@@ -55,5 +55,9 @@ public class Main {
         
         double valorTotalIPI = valorTotalComIPI - valorTotalSemIPI;
         
+        System.out.println("\n**Resultados:**");
+        System.out.printf("Valor total dos produtos sem IPI: R$ %.2f", valorTotalSemIPI);
+        System.out.printf("\nValor total do IPI: R$ %.2f", valorTotalIPI);
+        System.out.printf("\nValor total dos produtos com IPI: R$ %.2f", valorTotalComIPI);        
     }
 }
