@@ -27,24 +27,32 @@ public class SmartTV {
     public void aumentarVolume() {
         if (ligada && volume < 100) {
             volume++;
+        }else{
+            System.out.println("TV está desligada");
         }
     }
 
     public void diminuirVolume() {
         if (ligada && volume > 0) {
             volume--;
+        }else{
+            System.out.println("TV está desligada ou mudo");
         }
     }
 
     public void subirCanal() {
         if (ligada) {
             canal++;
+        }else{
+            System.out.println("TV está desligada");
         }
     }
 
     public void descerCanal() {
         if (ligada && canal > 1) {
             canal--;
+        }else{
+            System.out.println("TV está desligada ou canal < 1");
         }
     }
     
