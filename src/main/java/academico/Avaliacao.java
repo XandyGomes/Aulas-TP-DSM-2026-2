@@ -9,7 +9,8 @@ package academico;
  * @author Alexandre
  */
 public interface Avaliacao {
+
     void registrarNota(Aluno aluno, Disciplina disciplina, double nota);
-    
-    void registraFrequencia(Aluno aluno, Disciplina disciplina, boolean presente);
+
+    void registrarFrequencia(Aluno aluno, Disciplina disciplina, boolean presente);
 }

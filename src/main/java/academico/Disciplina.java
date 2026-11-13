@@ -12,6 +12,7 @@ import java.util.List;
  * @author Alexandre
  */
 public class Disciplina {
+
     private String nome;
     private int cargaHoraria;
     private Professor professor;
@@ -21,33 +22,31 @@ public class Disciplina {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public int getCargaHoraria() {
         return cargaHoraria;
-    }
-
-    public void setCargaHoraria(int cargaHoraria) {
-        this.cargaHoraria = cargaHoraria;
     }
 
     public Professor getProfessor() {
         return professor;
     }
 
-    public void setProfessor(Professor professor) {
-        this.professor = professor;
-    }
-
     public List<Turma> getTurmas() {
         return turmas;
+    }
+
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setCargaHoraria(int cargaHoraria) {
+        this.cargaHoraria = cargaHoraria;
+    }
+
+    public void setProfessor(Professor professor) {
+        this.professor = professor;
     }
 
     public void setTurmas(List<Turma> turmas) {
         this.turmas = turmas;
     }
-
-
 }

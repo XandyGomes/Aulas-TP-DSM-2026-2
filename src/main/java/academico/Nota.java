@@ -9,6 +9,7 @@ package academico;
  * @author Alexandre
  */
 public class Nota {
+
     private Aluno aluno;
     private Disciplina disciplina;
     private Double valor;
@@ -17,24 +18,23 @@ public class Nota {
         return aluno;
     }
 
-    public void setAluno(Aluno aluno) {
-        this.aluno = aluno;
-    }
-
     public Disciplina getDisciplina() {
         return disciplina;
-    }
-
-    public void setDisciplina(Disciplina disciplina) {
-        this.disciplina = disciplina;
     }
 
     public Double getValor() {
         return valor;
     }
 
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
+
+    public void setDisciplina(Disciplina disciplina) {
+        this.disciplina = disciplina;
+    }
+
     public void setValor(Double valor) {
         this.valor = valor;
     }
-    
 }

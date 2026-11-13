@@ -11,6 +11,7 @@ import java.util.Date;
  * @author Alexandre
  */
 public abstract class Pessoa {
+
     private String nome;
     private Date dataNascimento;
     private String endereco;
@@ -19,24 +20,23 @@ public abstract class Pessoa {
         return nome;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
-    }
-
     public Date getDataNascimento() {
         return dataNascimento;
-    }
-
-    public void setDataNascimento(Date dataNascimento) {
-        this.dataNascimento = dataNascimento;
     }
 
     public String getEndereco() {
         return endereco;
     }
 
+    public void setNome(String nome) {
+        this.nome = nome;
+    }
+
+    public void setDataNascimento(Date dataNascimento) {
+        this.dataNascimento = dataNascimento;
+    }
+
     public void setEndereco(String endereco) {
         this.endereco = endereco;
     }
-    
 }

@@ -8,7 +8,8 @@ package academico;
  *
  * @author Alexandre
  */
-public class Professor extends Pessoa{
+public class Professor extends Pessoa {
+
     private String registro;
 
     public String getRegistro() {
@@ -18,5 +19,4 @@ public class Professor extends Pessoa{
     public void setRegistro(String registro) {
         this.registro = registro;
     }
-    
 }

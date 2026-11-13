@@ -8,7 +8,8 @@ package academico;
  *
  * @author Alexandre
  */
-public class Aluno extends Pessoa{
+public class Aluno extends Pessoa {
+
     private String matricula;
 
     public String getMatricula() {
@@ -18,6 +19,4 @@ public class Aluno extends Pessoa{
     public void setMatricula(String matricula) {
         this.matricula = matricula;
     }
-    
-    
 }

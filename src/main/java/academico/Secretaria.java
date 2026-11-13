@@ -12,13 +12,9 @@ import java.util.List;
  *
  * @author Alexandre
  */
-public class Secretaria implements Matriculavel{
-    
-    private List<Matricula> matriculas = new ArrayList<>();
+public class Secretaria implements Matriculavel {
 
-    public List<Matricula> getMatriculas() {
-        return matriculas;
-    }
+    private List<Matricula> matriculas = new ArrayList<>();
 
     @Override
     public void matricular(Aluno aluno, Turma turma) {
@@ -33,13 +29,16 @@ public class Secretaria implements Matriculavel{
     @Override
     public void cancelarMatricula(Aluno aluno, Turma turma) {
         Matricula achada = null;
-        for(Matricula m : matriculas){
-            if(m.getAluno() == aluno && m.getTurma() == turma){
+        for (Matricula m : matriculas) {
+            if (m.getAluno() == aluno && m.getTurma() == turma) {
                 achada = m;
             }
         }
         matriculas.remove(achada);
         turma.getAlunos().remove(aluno);
     }
-    
+
+    public List<Matricula> getMatriculas() {
+        return matriculas;
+    }
 }

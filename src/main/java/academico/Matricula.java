@@ -11,6 +11,7 @@ import java.util.Date;
  * @author Alexandre
  */
 public class Matricula {
+
     private Aluno aluno;
     private Turma turma;
     private Date dataMatricula;
@@ -19,24 +20,23 @@ public class Matricula {
         return aluno;
     }
 
-    public void setAluno(Aluno aluno) {
-        this.aluno = aluno;
-    }
-
     public Turma getTurma() {
         return turma;
-    }
-
-    public void setTurma(Turma turma) {
-        this.turma = turma;
     }
 
     public Date getDataMatricula() {
         return dataMatricula;
     }
 
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
+
+    public void setTurma(Turma turma) {
+        this.turma = turma;
+    }
+
     public void setDataMatricula(Date dataMatricula) {
         this.dataMatricula = dataMatricula;
     }
-    
 }

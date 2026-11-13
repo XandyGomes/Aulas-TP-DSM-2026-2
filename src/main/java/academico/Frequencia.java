@@ -9,6 +9,7 @@ package academico;
  * @author Alexandre
  */
 public class Frequencia {
+
     private Aluno aluno;
     private Disciplina disciplina;
     private Boolean presente;
@@ -17,24 +18,23 @@ public class Frequencia {
         return aluno;
     }
 
-    public void setAluno(Aluno aluno) {
-        this.aluno = aluno;
-    }
-
     public Disciplina getDisciplina() {
         return disciplina;
-    }
-
-    public void setDisciplina(Disciplina disciplina) {
-        this.disciplina = disciplina;
     }
 
     public Boolean getPresente() {
         return presente;
     }
 
+    public void setAluno(Aluno aluno) {
+        this.aluno = aluno;
+    }
+
+    public void setDisciplina(Disciplina disciplina) {
+        this.disciplina = disciplina;
+    }
+
     public void setPresente(Boolean presente) {
         this.presente = presente;
     }
-    
 }
